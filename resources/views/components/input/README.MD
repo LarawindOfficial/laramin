@@ -1,6 +1,8 @@
 # Input Components
 
 ## Input Control
+An input control is a fundamental component that allows users to enter data, such as text, numbers, or selections.
+
 ```blade
 @props(['disabled' => false])
 
