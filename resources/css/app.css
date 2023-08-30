@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Buttons */
+.button {
+    @apply inline-flex items-center px-4 py-2 border border-transparent rounded-md font-semibold text-xs uppercase tracking-widest focus:outline-none focus:ring-2 focus:ring-offset-2 transition ease-in-out duration-150;
+}
+.return-button {
+    @apply bg-green-800 dark:bg-green-200 text-white dark:text-green-800 hover:bg-green-700 dark:hover:bg-white focus:bg-green-700 dark:focus:bg-white active:bg-green-900 dark:active:bg-gray-300 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800;
+}
 .create-button {
-    @apply inline-flex items-center px-4 py-2 bg-green-800 dark:bg-green-200 border border-transparent rounded-md font-semibold text-xs text-white dark:text-green-800 uppercase tracking-widest hover:bg-green-700 dark:hover:bg-white focus:bg-green-700 dark:focus:bg-white active:bg-green-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150;
+    @apply bg-green-800 dark:bg-green-200 text-white dark:text-green-800 hover:bg-green-700 dark:hover:bg-white focus:bg-green-700 dark:focus:bg-white active:bg-green-900 dark:active:bg-gray-300 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800;
+}
+.update-button {
+    @apply bg-green-800 dark:bg-green-200 text-white dark:text-green-800 hover:bg-green-700 dark:hover:bg-white focus:bg-green-700 dark:focus:bg-white active:bg-green-900 dark:active:bg-gray-300 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800;
+}
+.delete-button {
+    @apply bg-green-800 dark:bg-green-200 text-white dark:text-green-800 hover:bg-green-700 dark:hover:bg-white focus:bg-green-700 dark:focus:bg-white active:bg-green-900 dark:active:bg-gray-300 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800;
 }
