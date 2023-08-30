@@ -1,13 +1,14 @@
 # Administration Views
 
 ## Users
-  - index.blade.php
+<ol>
+  <li>index.blade.php</li>
   - create.blade.php
   - show.blade.php
   - edit.blade.php
 2. Roles
 3. Permissions
-
+</ol>
 ## View Layout Guide
 
 ```blade
