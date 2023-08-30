@@ -26,6 +26,7 @@ Button variant classes define different styles and appearances for the buttons. 
 - `button-secondary`
 
 >
+> Note:
 > The `.button` class has to come first when using the button variant classes.
 >
 
