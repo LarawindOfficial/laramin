@@ -31,4 +31,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('permissions', \App\Http\Controllers\PermissionController::class);
 });
 
+// TODO: Create a prefix route group.
+
 require __DIR__.'/auth.php';
