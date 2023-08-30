@@ -1,6 +1,6 @@
 # Administration Views
 
-1. Users
+## Users
   - index.blade.php
   - create.blade.php
   - show.blade.php
