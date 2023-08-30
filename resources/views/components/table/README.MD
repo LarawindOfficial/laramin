@@ -1,6 +1,6 @@
 # Table Component
 
-1. Index
+## Index
 
 ```blade
 <table class="w-full bg-gray-800 table-auto rounded-md">
@@ -15,7 +15,7 @@
 </table>
 ```
 
-2. Header
+## Header
 
 ```blade
 <th class="px-6 py-4 border-b border-gray-900 text-left text-gray-800 dark:text-gray-100 text-sm uppercase tracking-wide font-semibold">
@@ -23,3 +23,8 @@
 </th>
 ```
 
+## Cell
+
+```blade
+<td class="px-6 py-3 text-gray-700 dark:text-gray-100">{{ $slot }}</td>
+```
