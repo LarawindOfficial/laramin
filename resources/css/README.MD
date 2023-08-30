@@ -1,4 +1,8 @@
 # Classes
 
 ## Buttons
-- `.button` Base button class
+### Base Button
+`.button` Base button class
+```html
+<button class="button">Button</button>
+```
