@@ -2,6 +2,9 @@
 
 Button classes are predefined sets of styling rules in CSS, below are some of the classes we have predefined.
 
+| # Note
+| Updates coming soon.
+
 ### 1. Base Classes
 A base `button` class defines fundamental styles for the button component, serving as a foundation for customization.
 
