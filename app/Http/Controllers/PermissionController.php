@@ -29,6 +29,7 @@ class PermissionController extends Controller
      */
     public function store(Request $request)
     {
+        // TODO: Add validation
         $permission = new Permission();
         $permission->name = $request->name;
         $permission->display_name = $request->display_name;
@@ -61,7 +62,7 @@ class PermissionController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        // TODO: Complete
     }
 
     /**
@@ -69,6 +70,6 @@ class PermissionController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        // TODO: Complete
     }
 }
