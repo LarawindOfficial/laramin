@@ -2,9 +2,13 @@
 
 ### 1. Base
 A base `button` class defines fundamental styles for the button component, serving as a foundation for customization.
+
+Example:
 ```html
 <!-- Default Button -->
-<button class="button">Button</button>
+<button class="button">
+Button
+</button>
 ```
 ### 2. Variants
 Button variants that are currently available: `button-primary`, `button-secondary`.
