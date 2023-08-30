@@ -17,6 +17,7 @@ Button
 Button variant classes define different styles and appearances for the buttons. Variants that are currently available: `button-primary`, `button-secondary`.
 
 <b>Default Variants</b>
+
 Example:
 ```html
 <!-- Primary Button -->
@@ -31,7 +32,7 @@ Secondary Button
 ```
 
 <b>Action Variants</b>
-Action button classes that are currently available: `create-button`, `update-button`, `delete-button`, `return-button`.
+
 Example usage:
 ```html
 <button class="button create-button">Create</button>
