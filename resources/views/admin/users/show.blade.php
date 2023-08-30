@@ -6,10 +6,10 @@
     </x-slot>
 
     <x-slot name="actions">
-        <a href="{{ route('users.index') }}" class="return-button">
+        <a href="{{ route('users.index') }}" class="button return-button">
             {{ __('Return') }}
         </a>
-        <a href="{{ route('users.edit', $user->id) }}" class="update-button">
+        <a href="{{ route('users.edit', $user->id) }}" class="button update-button">
             {{ __('Update User') }}
         </a>
     </x-slot>

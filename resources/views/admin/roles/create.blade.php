@@ -6,7 +6,7 @@
     </x-slot>
 
     <x-slot name="actions">
-        <a href="{{ route('roles.index') }}" class="return-button">
+        <a href="{{ route('roles.index') }}" class="button return-button">
             {{ __('Return') }}
         </a>
     </x-slot>

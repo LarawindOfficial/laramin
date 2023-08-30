@@ -6,7 +6,7 @@
     </x-slot>
 
     <x-slot name="actions">
-        <a href="{{ route('users.create') }}" class="create-button">
+        <a href="{{ route('users.create') }}" class="button create-button">
             {{ __('Create User') }}
         </a>
     </x-slot>

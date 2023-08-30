@@ -7,10 +7,10 @@
     </x-slot>
 
     <x-slot name="actions">
-        <a href="{{ route('permissions.index') }}" class="return-button">
+        <a href="{{ route('permissions.index') }}" class="button return-button">
             {{ __('Return') }}
         </a>
-        <a href="{{ route('permissions.show', $permission->id) }}" class="return-button">
+        <a href="{{ route('permissions.show', $permission->id) }}" class="button return-button">
             {{ __('View Permission') }}
         </a>
     </x-slot>

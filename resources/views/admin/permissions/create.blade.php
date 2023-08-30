@@ -6,7 +6,7 @@
     </x-slot>
 
     <x-slot name="actions">
-        <a href="{{ route('permissions.index') }}" class="return-button">
+        <a href="{{ route('permissions.index') }}" class="button return-button">
             {{ __('Return') }}
         </a>
     </x-slot>
