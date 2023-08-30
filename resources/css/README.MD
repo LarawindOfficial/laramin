@@ -1,8 +1,5 @@
-# Classes
+# Button Classes
 
----
-
-## Buttons
 ### 1. Base
 ```html
 <!-- Default Button -->
