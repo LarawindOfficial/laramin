@@ -3,12 +3,12 @@
 ---
 
 ## Buttons
-1. Base
+### 1. Base
 ```html
 <!-- Default Button -->
 <button class="button">Button</button>
 ```
-2. Variants
+### 2. Variants
 Button variants that are currently available: `button-primary`, `button-secondary`.
 Example usage:
 ```html
