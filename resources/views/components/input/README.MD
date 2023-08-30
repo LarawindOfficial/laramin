@@ -14,6 +14,8 @@ Example:
 ---
 
 ## Input Label
+An input label is a descriptive element that provides context and identifies the purpose of the input component on a form for better user understanding and accessibility.
+
 ```blade
 @props(['value'])
 
