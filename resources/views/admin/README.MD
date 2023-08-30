@@ -1,6 +1,5 @@
 # Administration Views
 
-## Users
 <ol>
   <li>Users</li>
     <ol>
