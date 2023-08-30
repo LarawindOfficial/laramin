@@ -4,14 +4,27 @@
 <ol>
   <li>Users</li>
     <ol>
-  <li>index.blade.php</li>
-  <li>create.blade.php</li>
-  <li>show.blade.php</li>
-  <li>edit.blade.php</li>
+        <li>index.blade.php</li>
+        <li>create.blade.php</li>
+        <li>show.blade.php</li>
+        <li>edit.blade.php</li>
+    </ol>
+<li>Roles</li>
+    <ol>
+        <li>index.blade.php</li>
+        <li>create.blade.php</li>
+        <li>show.blade.php</li>
+        <li>edit.blade.php</li>
+    </ol>
+<li>Permissions</li>
+    <ol>
+        <li>index.blade.php</li>
+        <li>create.blade.php</li>
+        <li>show.blade.php</li>
+        <li>edit.blade.php</li>
   </ol>
-2. Roles
-3. Permissions
 </ol>
+
 ## View Layout Guide
 
 ```blade
