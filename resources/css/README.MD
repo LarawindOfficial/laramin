@@ -14,13 +14,19 @@ Button
 ```
 
 ### 2. Variants
-Button variants that are currently available: `button-primary`, `button-secondary`.
-Example usage:
+Button variant classes define different styles and appearances for the buttons. Variants that are currently available: `button-primary`, `button-secondary`.
+
+Example:
 ```html
 <!-- Primary Button -->
-<button class="button button-primary">Button</button>
+<button class="button button-primary">
+Primary Button
+</button>
+
 <!-- Secondary Button -->
-<button class="button button-secondary">Button</button>
+<button class="button button-secondary">
+Secondary Button
+</button>
 ```
 
 ### 3. Action
