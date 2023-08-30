@@ -2,7 +2,7 @@
 
 Button classes are predefined sets of styling rules in CSS, below are some of the classes we have predefined.
 
-### 1. Base
+### 1. Base Classes
 A base `button` class defines fundamental styles for the button component, serving as a foundation for customization.
 
 Example:
@@ -13,7 +13,7 @@ Button
 </button>
 ```
 
-### 2. Variants
+### 2. Variant Classes
 Button variant classes define different styles and appearances for the buttons. Variants that are currently available:
 
 <b>Default Variants:</b><br>
