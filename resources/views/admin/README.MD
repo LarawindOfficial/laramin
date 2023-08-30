@@ -3,12 +3,12 @@
 ## Users
 <ol>
   <li>Users</li>
-<ol>
+    <ol>
   <li>index.blade.php</li>
-</ol>
-  - create.blade.php
-  - show.blade.php
-  - edit.blade.php
+  <li>create.blade.php</li>
+  <li>show.blade.php</li>
+  <li>edit.blade.php</li>
+  </ol>
 2. Roles
 3. Permissions
 </ol>
