@@ -18,7 +18,7 @@ Example usage:
 <button class="button button-secondary">Button</button>
 ```
 
-3. Action
+### 3. Action
 Action button classes that are currently available: `create-button`, `update-button`, `delete-button`, `return-button`.
 Example usage:
 ```html
