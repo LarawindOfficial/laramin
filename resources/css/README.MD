@@ -3,7 +3,7 @@
 ---
 
 ## Buttons
-1. Button
+1. Base
 ```html
 <!-- Default Button -->
 <button class="button">Button</button>
@@ -17,6 +17,7 @@
 ```
 
 3. Action
+Action button classes that are currently available: `create-button` `update-button` `delete-button` `return-button`.
 ```html
 <button class="button create-button">Create</button>
 ```
