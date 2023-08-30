@@ -2,7 +2,10 @@
 
 ## Users
 <ol>
+  <li>Users</li>
+<ol>
   <li>index.blade.php</li>
+</ol>
   - create.blade.php
   - show.blade.php
   - edit.blade.php
