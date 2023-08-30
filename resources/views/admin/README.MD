@@ -1,7 +1,7 @@
 # Administration Views
 
 1. Users
-- index.blade.php
+ - index.blade.php
 2. Roles
 3. Permissions
 
