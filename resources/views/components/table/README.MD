@@ -1,5 +1,10 @@
 # Table Component
 
+>
+> Note:
+> Still in development.
+>
+
 ## Index
 
 ```blade
