@@ -6,7 +6,7 @@ The table below shows a comprehensive list of all the attributes available for t
 | Option 	| Default 	| Available Value 	|
 |--------	|---------	|-----------------	|
 | type   	| `primary` 	| `secondary`  	|
-|        	|         	|                 	|
+| disabled       	|  false       	| `true` `false`                	|
 |        	|         	|                 	|
 
 
