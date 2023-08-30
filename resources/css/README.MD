@@ -1,6 +1,7 @@
 # Button Classes
 
 ### 1. Base
+A base `button` class defines fundamental styles for the button component, serving as a foundation for customization.
 ```html
 <!-- Default Button -->
 <button class="button">Button</button>
