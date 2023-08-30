@@ -32,6 +32,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        // TODO: Validate request
         $user = new User();
 
         $user->name = $request->name;
@@ -43,6 +44,7 @@ class UserController extends Controller
             $user->addRole($request->roles);
         }
 
+        // TODO: Redirect to index with success message
         return redirect(route('users.index'));
     }
 
@@ -69,7 +71,7 @@ class UserController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        // TODO: Complete update method
     }
 
     /**
@@ -77,6 +79,6 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        // TODO: Complete destroy method
     }
 }

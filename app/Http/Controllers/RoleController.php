@@ -31,6 +31,7 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
+        // TODO: Validate request
         $role = new Role();
         $role->name = $request->name;
         $role->display_name = $request->display_name;
@@ -41,6 +42,7 @@ class RoleController extends Controller
             $role->syncPermissions(explode(',', $request->permissions));
         }
 
+        // TODO: Redirect to index with success message
         return redirect(route('roles.index'));
     }
 
@@ -67,7 +69,7 @@ class RoleController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        // TODO: Complete update method
     }
 
     /**
@@ -75,6 +77,6 @@ class RoleController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        // TODO: Complete destroy method
     }
 }
