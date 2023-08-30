@@ -15,6 +15,10 @@
     {{ $value ?? $slot }}
 </label>
 ```
+Example:
+```blade
+<x-input.label value="Label" />
+```
 
 ## Input Error
 ```blade
