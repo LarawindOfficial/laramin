@@ -21,3 +21,15 @@ Button
 <div style="background-color: green;">
   Hello
 </div>
+
+
+<style>
+  .alert {
+    background-color: green;
+  }
+</style>
+
+<div class="alert">
+  Hello
+</div>
+
