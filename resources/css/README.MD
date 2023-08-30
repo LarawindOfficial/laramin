@@ -1,5 +1,7 @@
 # Classes
 
+---
+
 ## Buttons
 ### Base Button
 `.button` Base button class
