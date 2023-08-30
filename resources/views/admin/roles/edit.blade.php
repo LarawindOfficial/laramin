@@ -6,6 +6,15 @@
         </h2>
     </x-slot>
 
+    <x-slot name="actions">
+        <a href="{{ route('roles.index') }}" class="return-button">
+            {{ __('Return') }}
+        </a>
+        <a href="{{ route('roles.show', $roles->id) }}" class="update-button">
+            {{ __('View Permission') }}
+        </a>
+    </x-slot>
+
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <form action="{{ route('roles.edit', $role->id) }}" method="PATCH" class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6">

@@ -5,13 +5,11 @@
         </h2>
     </x-slot>
 
-    <div class="pt-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <a href="{{ route('permissions.create') }}" class="create-button">
-                {{ __('Create Permission') }}
-            </a>
-        </div>
-    </div>
+    <x-slot name="actions">
+        <a href="{{ route('permissions.create') }}" class="create-button">
+            {{ __('Create Permission') }}
+        </a>
+    </x-slot>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">

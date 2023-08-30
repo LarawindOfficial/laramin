@@ -27,6 +27,14 @@
                 </header>
             @endif
 
+            @if (isset($actions))
+            <div class="pt-12">
+                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    {{ $actions }}
+                </div>
+            </div>
+            @endif
+
             <!-- Page Content -->
             <main>
                 {{ $slot }}
