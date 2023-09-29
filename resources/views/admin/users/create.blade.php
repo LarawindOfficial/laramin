@@ -7,9 +7,11 @@
     </x-slot>
 
     <x-slot name="actions">
-        <a href="{{ route('users.index') }}" class="button return-button">
-            {{ __('Return') }}
-        </a>
+        @role('superadministrator')
+            <a href="{{ route('users.index') }}" class="button return-button">
+                {{ __('Return') }}
+            </a>
+        @endrole
     </x-slot>
 
     <div class="py-12">
