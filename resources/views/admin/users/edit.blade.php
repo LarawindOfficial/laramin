@@ -17,6 +17,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            @include('admin.users.partials.edit-user-form')
             <form action="{{ route('users.edit', $user->id) }}" method="PATCH" class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6">
                 @csrf
                 <div class="mb-3">
