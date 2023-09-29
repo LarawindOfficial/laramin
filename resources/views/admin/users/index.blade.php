@@ -7,9 +7,11 @@
     </x-slot>
 
     <x-slot name="actions">
-        <a href="{{ route('users.create') }}" class="button create-button">
-            {{ __('Create User') }}
-        </a>
+        @role('superadministrator')
+            <a href="{{ route('users.create') }}" class="button create-button">
+                {{ __('Create User') }}
+            </a>
+        @endrole
     </x-slot>
 
     <div class="py-12">
@@ -30,7 +32,9 @@
                         <x-table.cell>{{ $user->created_at }}</x-table.cell>
                         <x-table.cell>
                             <a href="{{ route('users.show', $user->id) }}">View</a>
-                            <a href="{{ route('users.edit', $user->id) }}">Edit</a>
+                            @role('superadministrator')
+                                <a href="{{ route('users.edit', $user->id) }}">Edit</a>
+                            @endrole
                         </x-table.cell>
                     </x-table.row>
                 @endforeach

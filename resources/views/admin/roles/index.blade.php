@@ -6,9 +6,11 @@
     </x-slot>
 
     <x-slot name="actions">
-        <a href="{{ route('roles.create') }}" class="button create-button">
-            {{ __('Create Role') }}
-        </a>
+        @role('superadministrator')
+            <a href="{{ route('roles.create') }}" class="button create-button">
+                {{ __('Create Role') }}
+            </a>
+        @endrole
     </x-slot>
 
     <div class="py-12">
@@ -29,7 +31,9 @@
                         <x-table.cell>{{ $role->created_at }}</x-table.cell>
                         <x-table.cell>
                             <a href="{{ route('roles.show', $role->id) }}">View</a>
-                            <a href="{{ route('roles.edit', $role->id) }}">Edit</a>
+                            @role('superadministrator')
+                                <a href="{{ route('roles.edit', $role->id) }}">Edit</a>
+                            @endrole
                         </x-table.cell>
                     </x-table.row>
                 @endforeach
