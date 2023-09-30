@@ -75,3 +75,7 @@ BLADE;
 }
 ```
 
+# Install Command
+```bash
+php artisan make:command LaraminInstall
+```
