@@ -39,11 +39,10 @@ class RoleController extends Controller
         $role->save();
 
         if ($request->permissions) {
-            $role->syncPermissions(explode(',', $request->permissions));
+            $role->syncPermissions($request->permissions);
         }
 
-        // TODO: Redirect to index with success message
-        return redirect(route('roles.index'));
+        return redirect(route('roles.index'))->with('success', 'Role created successfully');
     }
 
     /**

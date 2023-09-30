@@ -15,20 +15,17 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <form action="{{ route('roles.store') }}" method="POST" class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6">
                 @csrf
-                <div class="mb-3">
-                    <x-input-label for="name" :value="__('Slug')" />
-                    <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="username" />
-                    <x-input-error :messages="$errors->get('name')" class="mt-2" />
-                </div>
-                <div class="mb-3">
-                    <x-input-label for="display_name" :value="__('Name')" />
-                    <x-text-input id="display_name" class="block mt-1 w-full" type="text" name="display_name" :value="old('display_name')" required autofocus autocomplete="username" />
-                    <x-input-error :messages="$errors->get('display_name')" class="mt-2" />
-                </div>
-                <div class="mb-3">
-                    <x-input-label for="description" :value="__('Description')" />
-                    <x-text-input id="description" class="block mt-1 w-full" type="text" name="description" :value="old('description')" required autofocus autocomplete="username" />
-                    <x-input-error :messages="$errors->get('description')" class="mt-2" />
+                <x-input type="text" name="name" value="{{ old('name') }}" label="{{ __('Slug') }}"></x-input>
+                <x-input type="text" name="display_name" value="{{ old('display_name') }}" label="{{ __('Name') }}"></x-input>
+                <x-input type="text" name="description" value="{{ old('description') }}" label="{{ __('Description') }}"></x-input>
+
+                <div class="grid grid-cols-4 gap-4">
+                    @foreach ($permissions as $permission)
+                        <div class="">
+                            <input type="checkbox" id="{{ $permission->name }}" name="permissions[]" value="{{ $permission->name }}">
+                            <label class="text-white" for="permissions">{{ $permission->display_name }}</label>
+                        </div>
+                    @endforeach
                 </div>
 
                 <div>

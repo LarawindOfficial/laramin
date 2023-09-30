@@ -16,7 +16,10 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            {{ $role->name }}
+            <span class="text-2xl text-white">{{ $role->name }}</span>
+            @foreach ($role->permissions as $permission)
+                <span class="text-white">{{ $permission->display_name }}</span>
+            @endforeach
         </div>
     </div>
 </x-app-layout>
