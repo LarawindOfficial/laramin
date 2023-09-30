@@ -4,10 +4,11 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
+use function Laravel\Prompts\text;
 
 class CreateResourceViews extends Command
 {
-    protected $signature = 'create:resource-views {directory}';
+    protected $signature = 'create:resource-views';
 
     protected $description = 'Create resource views with specified directory and files';
 
@@ -18,6 +19,7 @@ class CreateResourceViews extends Command
 
     public function handle()
     {
+        $name = $this->text('What is your name?');
         $directory = $this->argument('directory');
 
         // Create the directory if it doesn't exist
