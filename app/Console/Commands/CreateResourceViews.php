@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use function Laravel\Prompts\text;
+use function Laravel\Prompts\info;
 
 class CreateResourceViews extends Command
 {
@@ -19,6 +20,7 @@ class CreateResourceViews extends Command
 
     public function handle()
     {
+        info('Package installed successfully.');
         $name = text('What is your name?');
         $directory = $this->argument('directory');
 
