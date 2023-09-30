@@ -1,14 +1,10 @@
 # Roles
 
-## Index
--[ ] Add layout components
--[ ] Add partials folder
--[ ] Create the required partials
-
+1. `index.blade.php`
 ```blade
 <x-app-layout>
     <x-slot name="header">
-		{{-- Add Page Header Title Component --}} 
+		{{-- TODO: Add Page Header Title Component --}} 
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Roles') }}
         </h2>
@@ -16,16 +12,17 @@
 
     <x-slot name="actions">
         @role('superadministrator')
-	{{-- Add Page Actions Components --}} 
+	{{-- TODO: Add Page Actions Components --}} 
             <a href="{{ route('roles.create') }}" class="button create-button">
                 {{ __('Create Role') }}
             </a>
         @endrole
     </x-slot>
 
-	{{-- Add Page Content Container Component --}} 
+	{{-- TODO: Add Page Content Container Component --}} 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+{{-- TODO: Create a partial and move the table section to that partial --}} 
             <x-table>
                 <x-slot name="header">
                     <x-table.header>ID</x-table.header>
@@ -52,5 +49,11 @@
         </div>
     </div>
 </x-app-layout>
-
 ```
+Tasks:
+-[] Add Page Header Title Component
+-[] Add Page Action Components
+-[] Add Page Content Container Component
+-[] Move Table Component To A Partial
+
+
