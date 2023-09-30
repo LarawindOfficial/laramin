@@ -1,3 +1,7 @@
+```bash
+php artisan make:command CreateResourceViews
+```
+
 ```php
 
 <?php
