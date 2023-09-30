@@ -19,7 +19,7 @@ class CreateResourceViews extends Command
 
     public function handle()
     {
-        $name = $this->text('What is your name?');
+        $name = text('What is your name?');
         $directory = $this->argument('directory');
 
         // Create the directory if it doesn't exist
