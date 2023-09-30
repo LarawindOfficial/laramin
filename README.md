@@ -1,1 +1,3 @@
-# Laravel ACL
+# Laramin
+
+A Laravel admin module
