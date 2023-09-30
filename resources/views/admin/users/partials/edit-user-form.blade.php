@@ -3,7 +3,7 @@
                 @csrf
                 <div class="mb-3">
                     <x-input-label for="name" :value="__('Username')" />
-                    <x-text-input id="name" class="block mt-1 w-full" type="email" name="name" :value="old('name')" required autofocus autocomplete="username" />
+                    <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="username" />
                     <x-input-error :messages="$errors->get('name')" class="mt-2" />
                 </div>
                 <div class="mb-3">
