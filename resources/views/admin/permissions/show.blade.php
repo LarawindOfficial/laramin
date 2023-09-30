@@ -1,24 +1,16 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Show Permission') }}
-        </h2>
+        <x-page.header.title>{{ __('Show Permission') }}</x-page.header.title>
     </x-slot>
 
     <x-slot name="actions">
-        <a href="{{ route('permissions.index') }}" class="button return-button">
-            {{ __('Return') }}
-        </a>
-        <a href="{{ route('permissions.edit', $permission->id) }}" class="button update-button">
-            {{ __('Update Permission') }}
-        </a>
+        <x-page.actions.return :route="route('permissions.index')" />
+        <x-page.actions.edit :route="route('permissions.edit', $permission->id)" />
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <h2>{{ $permission->display_name }}</h2>
-            <p>{{ $permission->name }}</p>
-            <p>{{ $permission->description }}</p>
-        </div>
-    </div>
+    <x-page.content.container>
+        <x-card>
+            <h2 class="text-2xl text-white">{{ $permission->name }}</h2>
+        </x-card>
+    </x-page.content.container>
 </x-app-layout>
