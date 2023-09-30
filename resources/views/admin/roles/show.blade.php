@@ -1,25 +1,19 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Show Role') }}
-        </h2>
+        <x-page.header.title>{{ __('Show Role') }}</x-page.header.title>
     </x-slot>
 
     <x-slot name="actions">
-        <a href="{{ route('roles.index') }}" class="button return-button">
-            {{ __('Return') }}
-        </a>
-        <a href="{{ route('roles.edit', $role->id) }}" class="button update-button">
-            {{ __('Update Role') }}
-        </a>
+        <x-page.actions.return :route="route('roles.index')" />
+        <x-page.actions.edit :route="route('roles.edit', $role->id)" />
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <span class="text-2xl text-white">{{ $role->name }}</span>
+    <x-page.content.container>
+        <x-card>
+            <h2 class="text-2xl text-white">{{ $role->name }}</h2>
             @foreach ($role->permissions as $permission)
                 <span class="text-white">{{ $permission->display_name }}</span>
             @endforeach
-        </div>
-    </div>
+        </x-card>
+    </x-page.content.container>
 </x-app-layout>
