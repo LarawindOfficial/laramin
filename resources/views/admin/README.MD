@@ -26,21 +26,39 @@
     </x-page.content.container>
 </x-app-layout>
 ```
+
 `create.blade.php`
 ```blade
 <x-app-layout>
     <x-slot name="header">
-        <x-page.header.title>{{ __('Create User') }}</x-page.header.title>
+        <x-page.header.title>{{ __('Create Resource') }}</x-page.header.title>
     </x-slot>
 
     <x-slot name="actions">
-        <x-page.actions.return :route="route('users.index')" />
+        <x-page.actions.return :route="route('resource.index')" />
     </x-slot>
 
     <x-page.content.container>
-        @include('admin.users.partials.create-new-user-form')
+        @include('admin.resource.partials.create-new-resource-form')
     </x-page.content.container>
 </x-app-layout>
 ```
 
+`edit.blade.php`
+```blade
+<x-app-layout>
+    <x-slot name="header">
+        <x-page.header.title>{{ __('Update Resource') }}</x-page.header.title>
+    </x-slot>
+
+    <x-slot name="actions">
+        <x-page.actions.return :route="route('resource.index')" />
+        <x-page.actions.show :route="route('resource.show', $user->id)" />
+    </x-slot>
+
+    <x-page.content.container>
+        @include('admin.resource.partials.edit-resource-form')
+    </x-page.content.container>
+</x-app-layout>
+```
 
