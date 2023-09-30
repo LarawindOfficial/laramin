@@ -6,6 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use function Laravel\Prompts\text;
 use function Laravel\Prompts\intro;
+use function Laravel\Prompts\note;
 
 class CreateResourceViews extends Command
 {
@@ -20,7 +21,8 @@ class CreateResourceViews extends Command
 
     public function handle()
     {
-        $intro = intro('Package installed successfully.');
+        $intro = intro('Welcome to ResourceGen.');
+        $info = note('Welcome to ResourceGen.');
         $name = text('What is your name?');
         $directory = $this->argument('directory');
 
