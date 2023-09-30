@@ -14,7 +14,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
+        // $users = User::all();
+        $users = User::with('roles')->get();
         return view('admin.users.index', compact('users'));
     }
 
@@ -44,8 +45,7 @@ class UserController extends Controller
             $user->addRole($request->roles);
         }
 
-        // TODO: Redirect to index with success message
-        return redirect(route('users.index'));
+        return redirect()->route('users.index')->with('success', 'User created successfully.');
     }
 
     /**
@@ -53,8 +53,8 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        $user = User::find($id);
-        return view('admin.users.show', compact('user'));
+        $user = User::where('id', $id)->with('roles')->first();
+        return view("admin.users.show")->withUser($user);
     }
 
     /**
@@ -62,8 +62,9 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
-        $user = User::find($id);
-        return view('admin.users.edit', compact('user'));
+        $roles = Role::all();
+        $user = User::where('id', $id)->with('roles')->first();
+        return view("admin.users.edit")->withUser($user)->withRoles($roles);
     }
 
     /**
