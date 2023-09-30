@@ -1,5 +1,6 @@
 # Admin Views
 
+`index.blade.php`
 ```blade
 <x-app-layout>
     <x-slot name="header">
